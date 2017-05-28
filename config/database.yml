@@ -1,0 +1,19 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  host: postgres
+  user: postgres
+
+development:
+  <<: *default
+  database: slackchat_development
+
+test:
+  <<: *default
+  database: slackchat_exchance_test
+
+production:
+  <<: *default
+  database: slackchat_exchance_production
