@@ -12,8 +12,8 @@ development:
 
 test:
   <<: *default
-  database: slackchat_exchance_test
+  database: slackchat_test
 
 production:
   <<: *default
-  database: slackchat_exchance_production
+  database: slackchat_production
